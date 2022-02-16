@@ -3,7 +3,7 @@
 $color-background: hsl(0, 0%, 97%);
 $color-rose: hsl(337, 96%, 68%);
 $color-purple: hsl(269, 76%, 65%);
-$color-blue: hsl(176, 100%, 47%);
+$color-blue: hsl(176, 100%, 47%); 
 
 * {
     margin: 0;
@@ -155,4 +155,19 @@ body {
     font-size: 0.8em;  
     margin-right: 15px;
     transform: translateY(-20px);
+}
+
+@media screen and (max-width: 500px) { 
+    .container .box { 
+        width: 300px;
+    }
+    .container .box:nth-child(1){
+        transform: translateX(-15px);
+    } 
+    .container .box:nth-child(3){
+        transform: translateX(15px);
+    } 
+    .form .form-inpt input {
+        width: 300px;
+    }
 }

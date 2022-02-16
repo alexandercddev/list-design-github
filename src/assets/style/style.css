@@ -172,4 +172,22 @@ body {
   transform: translateY(-20px);
 }
 
+@media screen and (max-width: 500px) {
+  .container .box {
+    width: 300px;
+  }
+
+  .container .box:nth-child(1) {
+    transform: translateX(-15px);
+  }
+
+  .container .box:nth-child(3) {
+    transform: translateX(15px);
+  }
+
+  .form .form-inpt input {
+    width: 300px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
