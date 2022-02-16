@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Design GitHub</title>
+    <link rel="stylesheet" href="./src/assets/style/style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form">
+            <div class="form-inpt">
+                <button id="search">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+                <input id="userName" type="text" placeholder="github: alexandercddev">
+            </div>
+            <span class="error" id="notFound"></span>
+        </form>
+    </div>
+    <div class="container">
+        <div class="box-img">
+            <a id="github" href="#" target="_blank">
+                <img id="avatar" loading="lazy" src="./src/assets/images/avatar.jpg" alt="Avatar">
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box" style="--color-left:#fc5f9b">
+            <div class="content">
+                <div class="content-icon">
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                </div>
+                <div class="content-text">
+                    <h3>Followers</h3>
+                    <p id="followers"> 0 followers</p>
+                </div>
+            </div>
+        </div> 
+        <div class="box" style="--color-left:#a362ea">
+            <div class="content">
+                <div class="content-icon">
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                </div>
+                <div class="content-text">
+                    <h3>Following</h3>
+                    <p id="following">0 following</p>
+                </div>
+            </div>
+        </div>
+        <div class="box" style="--color-left:#0ed095">
+            <div class="content">
+                <div class="content-icon">
+                    <ion-icon name="git-branch-outline"></ion-icon>
+                </div>
+                <div class="content-text">
+                    <h3>Repositories</h3>
+                    <p id="publicRepos">0 repositories</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="./src/assets/javascript/app.js"></script>
+</html>
